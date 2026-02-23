@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body class="body-formulario">
+
+    <div class="fondo-blur"></div>
+
+    <a href="index.html" class="btn-volver">← VOLVER</a>
+
+    <section class="confirmacion-container">
+        <div class="form-card">
+            <h2>FORMULARIO DE ASISTENCIA</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Tu nombre*</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Asistirás?*</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="si" required>
+                            <span>Confirmo que asistiré</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="no">
+                            <span>No podré ir :c</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="grupo">¿De qué Grupo Perteneces?*</label>
+                    <select id="grupo" name="grupo" required>
+                        <option value="" disabled selected>Selecciona tu familia o grupo...</option>
+                        <option value="amigos">Amigos :3</option>
+                        <option value="valdebenito-quintupil">Familia Valdebenito Quintupil</option>
+                        <option value="salinas-valdebenito">Familia Salinas Valdebenito</option>
+                        <option value="brito-barros">Familia Brito Barros</option>
+                        <option value="vergara-brito">Familia Vergara Brito</option>
+                        <option value="brito-paillamil">Familia Brito Paillamil</option>
+                        <option value="vicencio-tognarelli">Familia Vicencio Tognarelli</option>
+                        <option value="vicencio-yanez">Familia Vicencio Yáñez</option>
+                        <option value="cofre-tognarelli">Familia Cofré Tognarelli</option>
+                        <option value="tapia-davegno">Familia Tapia Davegno</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje Bonito :3</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Déjanos un mensaje..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar-form">Enviar asistencia</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

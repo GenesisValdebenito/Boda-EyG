@@ -1,0 +1,160 @@
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Optima', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* CONTENEDOR PADRE: Centrado Matemático */
+.confirmacion-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+/* FONDO FOTOGRÁFICO: Menos oscuro y más nítido */
+.fondo-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img-portada.png'); 
+    background-size: cover;
+    background-position: center;
+    /* Bajamos el brillo solo un poco (0.6) para que se vea la foto mejor */
+    filter: brightness(0.6); 
+    z-index: 1;
+}
+
+/* BOTÓN VOLVER */
+.btn-volver {
+    position: fixed; 
+    top: 30px;
+    left: 30px;
+    z-index: 100;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-family: 'Sharis', serif;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    border-bottom: 1px solid #fff;
+    opacity: 0.7;
+}
+
+/* EL CUADRO: Menos borroso (Glassmorphism sutil) */
+.form-card {
+    background: rgba(0, 0, 0, 0.2); /* Fondo oscuro muy leve para contraste */
+    /* Reducimos el blur de 15px a 5px para que se vea el fondo */
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 45px;
+    width: 95%;
+    max-width: 480px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-family: 'Sharis', serif;
+    font-weight: 300;
+    margin-bottom: 35px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* FORMULARIO */
+.form-group {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    color: white;
+    border-radius: 2px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #fff;
+}
+
+/* SELECT: Fondo negro para legibilidad de nombres */
+select {
+    background-color: #1a1a1a !important;
+    cursor: pointer;
+}
+
+/* BOTÓN ENVIAR: Elegante y Sólido */
+.btn-enviar-form {
+    width: 100%;
+    padding: 16px;
+    background: #ffffff;
+    color: #000;
+    border: none;
+    font-family: 'Sharis', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar-form:hover {
+    background: #eeede7;
+    letter-spacing: 4px;
+}
+
+/* Radio buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-label {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}

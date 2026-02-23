@@ -1,0 +1,832 @@
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Optima', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background-color: #eeede7;
+}
+
+/* ============================================
+   NAVBAR TRANSPARENTE FIJO
+   ============================================ */
+
+.navbar-minimal {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    padding: 10px 30px;
+}
+
+.navbar-btn-minimal {
+    font-family: inherit;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-size: 0.8rem;
+}
+
+.navbar-btn-minimal:hover {
+    background: #eeede7;
+    color: #000;
+}
+
+/* ============================================
+   SECCIÓN 1: PORTADA
+   ============================================ */
+
+.portada {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.portada-imagen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.portada-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+}
+
+.portada-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+    background: #eeede7;
+    position: relative;
+}
+
+.logo-ge {
+    width: 180px;
+    margin-bottom: 40px;
+}
+
+.portada-contenido h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.portada-contenido h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    font-family: 'Didot', serif;
+    margin-bottom: 60px;
+}
+
+/* ============================================
+   SECCIÓN 2: CARTA A FAMILIA Y AMIGOS
+   ============================================ */
+
+.carta {
+    padding: 100px 60px;
+    background-color: #eeede7;
+}
+
+.carta h2 {
+    text-align: left;
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.carta-contenido {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    max-width: 1400px;
+    align-items: start;
+}
+
+.carta-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.carta-texto p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #2a2a2a;
+    text-align: justify;
+}
+
+.firma {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.firma em {
+    font-style: italic;
+}
+
+/* ============================================
+   SECCIÓN 3: TE ESPERAMOS CON ANSIAS
+   ============================================ */
+
+.ceremonias {
+    padding: 100px 60px;
+    background: #eeede7;
+}
+
+.ceremonias h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.ceremonias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ceremonia-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.ceremonia-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    object-fit: contain;
+}
+
+.ceremonia-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.ceremonia-item .fecha {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.ceremonia-item .hora {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+}
+
+.ceremonia-item .direccion {
+    font-size: 1.1rem;
+    color: #3a3a3a;
+}
+
+/* ============================================
+   SECCIÓN 4: DRESS CODE
+   ============================================ */
+
+.dress-code {
+    padding: 100px 60px;
+    background-color: #eeede7;
+}
+
+.dress-code h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 80px;
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.dress-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.dress-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.dress-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    object-fit: contain;
+}
+
+.dress-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.dress-item p {
+    font-size: 1.1rem;
+    color: #2a2a2a;
+    line-height: 1.7;
+}
+
+/* ============================================
+   SECCIÓN 5: PROGRAMA DE EVENTOS - CIVIL
+   ============================================ */
+
+.programa-civil {
+    padding: 0;
+    background: #000;
+    color: #eeede7;
+}
+
+.programa-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.programa-info {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.programa-info h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #eeede7;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.programa-subtitle {
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 50px;
+    color: #eeede7;
+    font-weight: 300;
+}
+
+.eventos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.evento-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+}
+
+.evento-item::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #eeede7;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.evento-item .tiempo {
+    font-size: 0.95rem;
+    font-weight: 500;
+    min-width: 100px;
+    color: #eeede7;
+    opacity: 0.8;
+}
+
+.evento-item .actividad {
+    font-size: 1.05rem;
+    flex: 1;
+    text-align: right;
+    color: #eeede7;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.programa-imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.programa-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/* ============================================
+   SECCIÓN 6: PROGRAMA DE EVENTOS - IGLESIA
+   ============================================ */
+
+.programa-iglesia {
+    padding: 0;
+    background: #000;
+    color: #eeede7;
+}
+
+.programa-contenido-iglesia {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    min-height: 100vh;
+}
+
+.programa-imagenes-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background: #000;
+}
+
+.programa-imagenes-left img {
+    width: 250px;
+    height: auto;
+    filter: grayscale(100%) brightness(0.9);
+}
+
+.programa-info-iglesia {
+    padding: 100px 80px 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.programa-info-iglesia h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #eeede7;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-align: right;
+}
+
+.programa-info-iglesia .programa-subtitle {
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 50px;
+    color: #eeede7;
+    font-weight: 300;
+    text-align: right;
+}
+
+.eventos-lista-iglesia {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.evento-item-iglesia {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+}
+
+.evento-item-iglesia::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #eeede7;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.evento-item-iglesia .tiempo {
+    font-size: 0.95rem;
+    font-weight: 500;
+    min-width: 100px;
+    color: #eeede7;
+    opacity: 0.8;
+}
+
+.evento-item-iglesia .actividad {
+    font-size: 1.05rem;
+    flex: 1;
+    text-align: right;
+    color: #eeede7;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+/* ============================================
+   SECCIÓN 7: REGALOS
+   ============================================ */
+
+.regalos {
+    padding: 100px 60px;
+    background: #000;
+    color: #eeede7;
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 40px;
+    align-items: center;
+}
+
+.regalos-decoracion-left img,
+.regalos-decoracion-right img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) brightness(0.7);
+    opacity: 0.5;
+}
+
+.regalos-contenido {
+    max-width: 900px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.regalos-contenido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #eeede7;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.regalos-contenido p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+    color: #eeede7;
+}
+
+.regalos-contenido strong {
+    color: #eeede7;
+    font-weight: 600;
+}
+
+.qr-section {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.qr-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.link-regalos {
+    color: #eeede7;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.link-regalos:hover {
+    color: #eeede7;
+}
+
+.email-regalos {
+    font-size: 1rem;
+    color: #eeede7;
+}
+
+/* ============================================
+   SECCIÓN 8: INFORMACIÓN Y PREGUNTAS
+   ============================================ */
+
+.preguntas {
+    padding: 100px 10%;
+    background: #eeede7;
+}
+
+.preguntas-titulo {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.preguntas-titulo h2 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+
+.preguntas-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.preguntas-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.pregunta-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.pregunta-item:last-child {
+    border-bottom: none;
+}
+
+.pregunta-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.numero {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    flex-shrink: 0;
+}
+
+.pregunta-item p {
+    font-size: 1.05rem;
+    color: #2a2a2a;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.pregunta-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================
+   SECCIÓN 9: MÁS INFORMACIÓN (FOOTER)
+   ============================================ */
+
+.footer-info {
+    background: #1a1a1a;
+    color: #eeede7;
+}
+
+.footer-imagen-grande {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer-imagen-grande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.footer-columna h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #eeede7;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.footer-columna h4 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #eeede7;
+    font-weight: 400;
+}
+
+.footer-columna p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #eeede7;
+}
+
+.btn-formulario-footer {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #eeede7;
+    color: #1a1a1a;
+    border: 1px solid rgba(26, 26, 26, 0.1);
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.4s ease;
+    line-height: 1.2;
+}
+
+.btn-formulario-footer:hover {
+    background: #1a1a1a;
+    color: #eeede7;
+    border-color: #1a1a1a;
+    transform: translateY(-1px);
+}
+
+/* ===============================
+   TIPOGRAFÍA ESPECIAL
+   =============================== */
+
+h1, h2, h3, h4,
+.preguntas-titulo h2,
+.footer-columna h3,
+.footer-columna h4 {
+    font-family: 'Sharis', 'Optima', serif;
+}
+
+.numero {
+    font-family: 'Sharis', 'Optima', serif;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1200px) {
+    .portada {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .portada-imagen {
+        height: 50vh;
+    }
+    
+    .carta-contenido {
+        grid-template-columns: 1fr;
+    }
+    
+    .ceremonias-grid,
+    .dress-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .programa-contenido,
+    .programa-contenido-iglesia {
+        grid-template-columns: 1fr;
+    }
+    
+    .programa-imagenes-left {
+        display: none;
+    }
+    
+    .regalos {
+        grid-template-columns: 1fr;
+    }
+    
+    .regalos-decoracion-left,
+    .regalos-decoracion-right {
+        display: none;
+    }
+    
+    .preguntas-contenido {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .footer-contenido {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .preguntas-contenido {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .preguntas-titulo h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-minimal {
+        padding: 15px 20px;
+    }
+    
+    .navbar-btn-minimal {
+        font-size: 0.85rem;
+        padding: 10px 20px;
+    }
+    
+    .portada-contenido h1 {
+        font-size: 1.8rem;
+    }
+    
+    .portada-contenido h2 {
+        font-size: 2.5rem;
+    }
+    
+    .carta h2 {
+        font-size: 2.5rem;
+    }
+    
+    .ceremonias h2,
+    .dress-code h2 {
+        font-size: 2rem;
+    }
+    
+    .programa-info h2,
+    .programa-info-iglesia h2 {
+        font-size: 2.5rem;
+    }
+    
+    .evento-item,
+    .evento-item-iglesia {
+        flex-direction: column;
+    }
+    
+    .preguntas {
+        padding: 80px 5%;
+    }
+    
+    .preguntas-titulo {
+        margin-bottom: 60px;
+    }
+    
+    .preguntas-titulo h2 {
+        font-size: 2rem;
+    }
+    
+    .pregunta-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .numero {
+        font-size: 1.3rem;
+    }
+    
+    .pregunta-item p {
+        font-size: 1rem;
+    }
+}
